@@ -1,0 +1,13 @@
+#!/usr/bin/csh
+source /apps/design_environment.csh
+setenv UVM_HOME /home/morris/uvm-1.2/
+setenv TUE_HOME ./tue
+setenv TVIP_COMMON_HOME ./tvip-common
+vcs -sverilog -timescale=1ns/1ns +acc +vpi +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR +incdir+${UVM_HOME}/src+${TUE_HOME}/src+./src+${TVIP_COMMON_HOME}/src+./dma_axi32/ ${UVM_HOME}/src/uvm.sv ${UVM_HOME}/src/dpi/uvm_dpi.cc -CFLAGS -DVCS $argv 
+if ($status != 0) exit $status
+./simv +UVM_TESTNAME=sample_test +ntb_enable_checker_trace=1+ntb_enable_checker_trace_on_failure+ntb_enable_solver_diagnostics=1
+#+ntb_stop_on_constraint_solver_error=1
+#+UVM_CONFIG_DB_TRACE
+
+
+
