@@ -10,16 +10,16 @@ This is an UVM verification environment for an AXI DMA master core. The agents p
 
 
 **Waveforms:**
-Read buffer: 32-bit
-Transfer buffer: 64-bit
+Read buffer: 32-bit |
+Transfer buffer: 64-bit |
 No delay
 ![Image of Boxes](https://raw.githubusercontent.com/letitbe0201/AXI-DMA-master-verification/master/doc/standard_tras_32_64.jpg)
 
-Read buffer: 32-bit
-Transfer buffer: 64-bit
-Min-delay:0
-Max_delay:10
+Read buffer: 32-bit |
+Transfer buffer: 64-bit |
+Min-delay:0 |
+Max_delay:10 |
 Weight(0, short, long): 6, 3, 1
 ![Image of Boxes](https://raw.githubusercontent.com/letitbe0201/AXI-DMA-master-verification/master/doc/delay_tras_32_64_axi.jpg)
 
-**Poster**(https://github.com/letitbe0201/AXI-DMA-master-verification/blob/master/doc/poster.pdf)
+[**Poster**](https://github.com/letitbe0201/AXI-DMA-master-verification/blob/master/doc/poster.pdf)
